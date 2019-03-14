@@ -5,9 +5,6 @@
         <!-- Importanto uma fonte do Google -->
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
         <style>
-            .red-text {
-                color: red;
-            }
             p {
                 font-size: 16px;
                 font-family: monospace;
@@ -15,6 +12,10 @@
             h2 {
                 font-family: Lobster, monospace;
                 /* Adicionando segunda fonte caso a primeira esteja indisponivel */
+            }
+            /* Classes começam com ponto ( . ) */
+            .red-text {
+                color: red;
             }
             .smaller-image {
                 width: 100px;
@@ -29,6 +30,10 @@
             .silver-background {
                 background-color: silver;
             }
+            /* ID's começam com hashtag ( # ) */
+            #cat-photo-form {
+                background-color: green;
+            }
         </style>
     </head>
     <body>
@@ -36,7 +41,6 @@
 
         <main>
             <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
-
             <a href="#">
                 <img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
             </a>
@@ -54,7 +58,7 @@
                     <li>other cats</li>
                 </ol>
             </div>
-            <form action="/submit-cat-photo">
+            <form action="/submit-cat-photo" id="cat-photo-form">
                 <label for="indoor">
                     <input type="radio" id="indoor" name="indoor-outdoor" checked> Indoor
                 </label>
