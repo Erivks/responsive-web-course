@@ -5,6 +5,10 @@
         <!-- Importanto uma fonte do Google -->
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
         <style>
+            /* Conteúdo do root, pode ser usado em todo o código CSS */
+            :root {
+                --color-green: #0f0; /* Declarando uma variável (antes do nome, deve-se usar ' -- ' */
+            }
             p {
                 font-size: 16px;
                 font-family: monospace;
@@ -15,13 +19,13 @@
             }
             /* Classes começam com ponto ( . ) */
             .red-text {
-                color: red;
+                color: #f00;
             }
             .smaller-image {
                 width: 100px;
             }
             .thick-green-border {
-                border-color: green;
+                border-color: var(--color-green);
                 border-width: 10px;
                 border-style: solid;
                 /* Fazendo uma imagem circular */
@@ -32,13 +36,16 @@
             }
             /* ID's começam com hashtag ( # ) */
             #cat-photo-form {
-                background-color: green;
+                background-color: var(--color-green);
+            }
+            /* Usando attribute selector ([attr=value])para mudar a margem de todos os elementos do tipo 'checkbox' */
+            [type='checkbox'] {
+                margin: 10px 0px 15px 0px;
             }
         </style>
     </head>
     <body>
         <h2 class="red-text">CatPhotoApp</h2>
-
         <main>
             <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
             <a href="#">
