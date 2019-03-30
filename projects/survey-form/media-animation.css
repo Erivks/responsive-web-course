@@ -1,0 +1,27 @@
+@keyframes shadow {
+    100% {
+        box-shadow: 5px 5px 18px #888;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.leftLabels, div.rightInputs {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+    div.formRows{
+        text-align: center;
+    }
+    textarea {
+        height: 100%;
+        width: 80%;
+    }
+    ul, li {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 20%; 
+    }
+}
