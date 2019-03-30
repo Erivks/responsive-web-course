@@ -78,4 +78,7 @@ textarea {
 }
 input#submit:hover {
     cursor: pointer;
+    animation-name: shadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
