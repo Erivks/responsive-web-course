@@ -69,7 +69,8 @@ input#submit {
     width: 150px;
     font-size: 15px;
     border-radius: 10px;
-    box-shadow: none;
+    background-color: #8b8064e7;
+    border: none;
 }
 textarea {
     height: 100%;
