@@ -15,7 +15,7 @@ h1#title {
 div#form {
     background-color: #C4BAA1;
     margin: 20px auto;
-    padding: 5px 0;
+    padding: 10px 0;
     width: 70%;
     border-radius: 20px;
     min-height: 50%;
@@ -24,6 +24,7 @@ div#form {
 
 p#description {
     text-align: center;
+    margin: 0;
 }
 
 div.formRows {
@@ -71,14 +72,15 @@ input#submit {
     border-radius: 10px;
     background-color: #8b8064e7;
     border: none;
+    transition: box-shadow 0.2s linear;
 }
+
+input#submit:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #888;
+}
+
 textarea {
     height: 100%;
     width: 75%;
-}
-input#submit:hover {
-    cursor: pointer;
-    animation-name: shadow;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
