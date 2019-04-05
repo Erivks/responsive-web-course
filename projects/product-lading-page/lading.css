@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Resetando valores */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #f7ffe0;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* ----------------- */
+
+/* Estilizando o header */
+
+#div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul, li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    text-align: right;
+}
+
+a {
+    text-decoration: none; /* Tira o estilo dos links */
+    color: #000;
+}
+
+a:hover {
+    color: #8d9dbb;
+}
+
+/* --------------------- */
