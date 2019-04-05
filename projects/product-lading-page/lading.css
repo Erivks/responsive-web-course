@@ -36,3 +36,50 @@ a:hover {
 }
 
 /* --------------------- */
+
+/* Formulário */
+
+#div-form {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+}
+
+#email {
+    width: 255px;
+    min-width: 200px;
+    height: 25px;
+    font-size: 12pt;
+    background-color: #f7ffe0;
+    border-bottom: 2px solid #9ba08b;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#email:hover {
+    border-bottom-color: #dbe4f5;
+}
+
+#email:focus {
+    border-bottom-color: #dbe4f5;
+}
+
+#email:invalid {
+    border-bottom-color: #ee9b9b;    
+}
+input[type='submit'] {
+    width: 170px;
+    min-width: 150px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 11pt;
+    background-color: #dbe4f5;
+    border: 1px solid #9ba08b;
+    border-radius: 5px;
+}
+
+/* --------------------- */
