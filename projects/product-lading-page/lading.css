@@ -121,3 +121,17 @@ input[type='submit'] {
 }
 
 /* ------------------- */
+
+/* Video */
+
+#div-video {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#video {
+    width: 100;
+    height: 100;
+}
+
+/* ------------------- */
