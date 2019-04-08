@@ -7,16 +7,31 @@ html, body {
     margin: 0;
     background-color: #f7ffe0;
     font-family: 'Montserrat', sans-serif; 
+    border: 0;
+    padding-top: 50px;
 }
 
 /* ----------------- */
 
 /* Estilizando o header */
 
+header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+}
+
+#header-img {
+    padding: 5px;
+}
+
 #div-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f7ffe0;
+    width: 100%;
 }
 
 nav li {
@@ -184,4 +199,17 @@ ol, li {
     text-align: center;
     display: block;
     text-decoration: none;
+}
+
+/* Footer */
+footer {
+    height: 20%;
+    border: 1px solid #dbe4f5;
+    background-color: #dbe4f5;
+    line-height: 1px;
+    text-align: right;
+}
+footer ul li {
+    display: inline;
+    margin: 1px 5px;
 }
