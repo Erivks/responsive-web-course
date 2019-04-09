@@ -16,6 +16,15 @@ html, body {
     padding: 0;
     margin: 0;
 }
+#div-content {
+    padding-top: 8.5rem;
+}
+#div-video {
+    padding-top: 7.8rem;
+}
+#div-price {
+    padding-top: 4.5rem;
+}
 .price {
     margin: 20px 10px;
 }

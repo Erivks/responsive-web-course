@@ -108,6 +108,7 @@ input[type='submit'] {
     width: 15%;
     min-width: 10%;
     height: 15%;
+    padding: 0;
 }
 
 .icon img {
@@ -129,7 +130,8 @@ input[type='submit'] {
 }
 
 #div-content {
-    margin: 50px auto;
+    margin: 0px auto;
+    padding-top: 7rem;
 }
 
 .grid {
@@ -143,7 +145,8 @@ input[type='submit'] {
     width: 560px; 
     height: 315px;
     text-align: center;
-    margin: 50px auto 70px;
+    margin: 0px auto;
+    padding-top: 7rem; 
 }
 
 #video {
@@ -210,8 +213,12 @@ footer {
     background-color: #dbe4f5;
     line-height: 1px;
     text-align: right;
+    padding: 5px;
 }
 footer ul li {
     display: inline;
     margin: 1px 5px;
+}
+footer ul {
+    margin: 0;
 }
