@@ -1,0 +1,10 @@
+.icon, .content {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#div-video {
+    width: 448px;
+    height: 252px;
+}

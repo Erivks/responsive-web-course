@@ -217,18 +217,6 @@ footer ul li {
     margin: 1px 5px;
 }
 
-@media screen and (max-width: 800px) {
-    .icon, .content {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-    #div-video {
-        width: 448px;
-        height: 252px;
-    }
-}
-
 @media screen and (max-width: 675px) {
     html, body {
         padding-top: 70px;
