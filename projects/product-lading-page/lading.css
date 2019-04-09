@@ -88,7 +88,6 @@ input {
 }
 input[type='submit'] {
     width: 170px;
-    min-width: 150px;
     height: 35px;
     font-weight: 600;
     font-size: 11pt;
@@ -118,12 +117,10 @@ input[type='submit'] {
  
 .content {
     width: 80%;
-    min-width: 75%;
     height: 20%;
-    text-align: left;
 }
 
-.contentp {
+.content p {
     font-size: 12pt;
 }
 
@@ -135,18 +132,21 @@ input[type='submit'] {
     margin: 50px auto;
 }
 
+.grid {
+    width: 100%;
+}
 /* ------------------- */
 
 /* Video */
 
 #div-video {
+    width: 560px; 
+    height: 315px;
     text-align: center;
     margin: 50px auto 70px;
 }
 
 #video {
-    width: 100;
-    height: 100;
     border: 1px solid #000;
 }
 
@@ -171,11 +171,14 @@ input[type='submit'] {
     justify-content: space-between;
     margin: 20px 20px;
     flex-wrap: wrap; 
+    border-radius: 5px;
 }
 .title-price{
     width: 100%;
     padding: 15px 0;
     background-color: #8d9dbb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 h4, h5{
     margin: 0;  
@@ -212,4 +215,71 @@ footer {
 footer ul li {
     display: inline;
     margin: 1px 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .icon, .content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #div-video {
+        width: 448px;
+        height: 252px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    html, body {
+        padding-top: 70px;
+    }
+    #div-header {
+        flex-direction: column;
+    }
+    #header-img {
+        padding: 5px 0px;
+    }
+    #nav-bar{
+        width: 100%;
+        text-align: center; 
+        padding-bottom: 8px; 
+    }
+    #nav-bar ul {
+        padding: 0;
+        margin: 0;
+    }
+    .price {
+        margin: 20px 10px;
+    }
+    h4 {
+        font-size: 13pt;
+    }
+    h5 {
+        font-size: 12pt;
+    }
+    .price .select-button {
+        width: 150px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 10pt;
+        border-radius: 5px;
+    }
+    .price li {
+        font-size: 11.5pt;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .price .select-button {
+        width: 125px;
+        height: 25px;
+        font-weight: 600;
+        font-size: 9.5pt;
+        border-radius: 5px;
+    }
+    li {
+        line-height: 22px;
+        word-wrap: break-word;
+    }
 }
