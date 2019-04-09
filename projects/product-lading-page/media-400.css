@@ -1,0 +1,32 @@
+nav li {
+    margin: 5px;
+}
+#div-video{
+    width: 278px;
+    height: 154px;
+}
+#div-price {
+    margin: 50px 20px;
+}
+.price {
+    margin: 20px 2px;
+    flex-wrap: initial;
+}
+.price li {
+    font-size: 11pt;
+}
+h4 {
+    font-size: 11pt;
+    padding: 0px 2px;
+}
+h5 {
+    margin: 8px auto 0px;
+    font-size: 10pt;
+}
+.price .select-button {
+    width: 90px;
+}
+.price ol li {
+    font-size: 9.5pt;
+    padding: 0px 1px;
+}
