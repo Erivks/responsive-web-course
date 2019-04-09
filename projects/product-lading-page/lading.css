@@ -216,17 +216,3 @@ footer ul li {
     display: inline;
     margin: 1px 5px;
 }
-
-@media screen and (max-width: 550px) {
-    .price .select-button {
-        width: 125px;
-        height: 25px;
-        font-weight: 600;
-        font-size: 9.5pt;
-        border-radius: 5px;
-    }
-    li {
-        line-height: 22px;
-        word-wrap: break-word;
-    }
-}
