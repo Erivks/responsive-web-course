@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <article>
+                <p>
+                    Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!
+                </p>
+                <p>
+                    The <a href="https://pypi.python.org/">Python Package Index (PyPI)</a> hosts thousands of third-party modules for Python. Both Python's standard library and the community-contributed modules allow for endless possibilities.
+                </p>
+                <ul>
+                    <li>Web and Internet Development</li>
+                    <li>Database Access</li>
+                    <li>Desktop GUIs</li>
+                    <li>Scientific & Numeric</li>
+                    <li>Education</li>
+                    <li>Network Programming</li>
+                    <li>Software & Game Developmen</li>
+                </ul>
+            </article>
+        </section>
+        <section id="GettingStarted" class="main-section">
+            <h1>Getting Started</h1>
+            <p>
+                Python distribution is available for a wide variety of platforms. You need to download only the binary code applicable for your platform and install Python.
+                If the binary code for your platform is not available, you need a C compiler to compile the source code manually. Compiling the source code offers more flexibility in terms of choice of features that you require in your installation.
+            </p>
+            <p>
+                Go to <a href="https://www.python.org/downloads/">Python.org</a> for download.
+            </p>
+        </section>
+        <section id="HelloWorld" class="main-section">
+            <header>
+                <h1>
+                    Hello World!
+                </h1>
+            </header>
+            <article>
+                <p>
+                    From this point use Python IDLE to run the following examples. Most Python installations contain a rudimentary IDE called IDLE. The name ostensibly stands for Integrated Development and Learning Environment.
+                </p>
+                <h2>
+                    Starting IDLE in Windows
+                </h2>
+                <p>
+                    Go to the Start menu and select All Programs or All Apps. There should be a program icon labeled IDLE (Python 3.x 32-bit) or something similar. This will vary slightly between Win 7, 8, and 10. The IDLE icon may be in a program group folder named Python 3.x. You can also find the IDLE program icon by using the Windows search facility from the start menu and typing in IDLE.    
+                </p>
+                <p>
+                    Click on the icon to start IDLE.
+                </p>
+                <p>
+                    There is a long-standing custom in the field of computer programming that the first code written in a newly installed language is a short program that simply displays the string <code class="code-inline">Hello, World!</code> to the console.
+                </p>
+                <p>
+                    The simplest Python 3 code to display Hello, World! is:
+                </p>
+                <code>
+                    >>> print('Hello, World!')
+                </code>
+            </article>
+        </section>
+        <section id="Python-2.x_vs_3.x" class="main-section">
+            <header>
+                <h1>
+                   Python 2.x vs 3.x                  
+                </h1>
+            </header>
+            <article>
+                <p>
+                    You may not be aware of all the differences between Python 2.x and Python 3.x and neither is it necessary, it is always advisable to use the most stable and recent version. But in interviews this question will often be asked so here are few of the differences between duo.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3"></th>
+                            <th>Python 2.x</th>
+                            <th>Python 3.x</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">1. Print</td>
+                            <td>
+                                <code>
+                                    >>> print 'Hello World'
+                                    Hello World
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    >>>print ('Hello World')
+                                    Hello World
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">2. Range</td>
+                            <td>
+                                <code>
+                                    >>> print range(0, 10, 1)
+                                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                </code>
+                                <code>
+                                    >>> range(10)
+                                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    >>> print(range(10))
+                                    range(0, 10)
+                                </code>
+                                <code>
+                                    >>> print(list(range(10)))
+                                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                3. Integer Divison
+                            </td>
+                            <td>
+                                <code>
+                                    >>>print 9/2
+                                    4
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    >>>print (9/2)
+                                    4.5
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                4. input() method
+                            </td>
+                            <td>
+                                <code>
+                                    s = raw_input("enter something:")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    s = input("enter something: ")
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Let’s understand these differences in detail.</p>
+                <h2>1. Print</h2>
+                <p>
+                    Python 3.x treats “print” as a function, which means you have to pass the items you need to print to the function in parentheses while Python 2.x does not.
+                </p>
+                <h2>2. Range</h2>
+                <p>
+                    In Python 2.x range is treated as a list with parameters while in Python 3.x range is treated as an object.
+                </p>
+                <h2>3. Integer Division</h2>
+                <p>
+                    In python 2 if we perform division on two integers then the output will be an integer too. But in python 3, output will be accurate, so the result can be in float too. Still want the result in integer, then you can use print(9//2) it return an integer result.
+                </p>
+                <h2>4. Print Function</h2>
+                <p>
+                    In python 2 parenthesis aren’t compulsory to use we can print anything without using parenthesis but in Python 3 it is compulsory to use parenthesis otherwise it will raise error.
+                </p>
+                <p>Exists many differences between these versions but the objective here is make you understanding that exists important differences between duo and not lists all.</p>
+            </article>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>
+                <h1>Variables</h1>
+            </header>
+            <p>
+                You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 
+            </p>
+            <p>
+                You can use any letter, the special characters "_" and every number provided you can't start variable name with it. White spaces and signs with special meanings in Python, as "+" and "-" are not allowed. 
+                Python is dynamically typed, which means that you <strong>don't have to declare what type each variable is</strong>.
+            </p>
+            <p>
+                In Python, variables are a storage placeholder for texts and numbers.
+                It must have a name so that you are able to find it again. 
+            </p>
+            <code>
+                x = 123 			# integer
+                x = 123L			# long integer
+                x = 3.14 			# double float
+                x = "hello" 			# string
+                x = [0,1,2] 			# list
+                x = (0,1,2) 			# tuple
+                x = open(‘hello.py’, ‘r’) 	# file
+            </code>
+        </section>
+        <section id="Data_Type"class="main-section">
+            <header>
+                <h1>Data Types</h1>
+            </header>
+            <article>
+                <h2>Integers</h2>
+                <p>
+                    In Python 3, there is effectively no limit to how long an integer value can be. Of course, it is constrained by the amount of memory your system has, as are all things, but beyond that an integer can be as long as you need it to be:
+                </p>
+                <code>
+                    >>> print(123123123123123123123123123123123123123123123123 + 1)
+                </code>
+                <h2>Floating-Point Numbers</h2>
+                <p>
+                    The float type in Python designates a floating-point number. float values are specified with a decimal point.
+                </p>
+                <code>
+                    >>> 4.2
+                    4.2
+                    >>> 4.
+                    4.0
+                    >>> .2
+                    0.2
+                </code>
+                <h2>Strings</h2>
+                <p>
+                    Strings are sequences of character data. The string type in Python is called <code class="code-inline">str</code>.
+                </p>
+                <p>
+                    String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string:
+                </p>
+                <code>
+                    >>> print("I am a string.")
+                    I am a string.
+                    >>> print('I am too.')
+                    I am too.
+                </code>
+                <h2>Boolean Type</h2>
+                <p>
+                    Python 3 provides a Boolean data type. Objects of Boolean type may have one of two values, <code class="code-inline">True</code> or <code class="code-inline">False</code>:
+                </p>
+                <code>
+                    >>> type(True)
+                    &ltclass 'bool'&gt
+                    >>> type(False)
+                    &ltclass 'bool'&gt
+                </code>
+            </article>
+        </section>
+        <section class="main-section">
+            <header>
+                
+            </header>
+        </section>
+    </main>
+</body>
+</html>
