@@ -84,14 +84,14 @@
                 <table>
                     <thead>
                         <tr>
-                            <th colspan="3"></th>
+                            <th colspan="2"></th>
                             <th>Python 2.x</th>
                             <th>Python 3.x</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="3">1. Print</td>
+                            <td colspan="2">1. Print</td>
                             <td>
                                 <code>
                                     <span class="input">>>></span><span class="function">print</span> <span class="string">'Hello World'</span>
@@ -106,7 +106,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3">2. Range</td>
+                            <td colspan="2">2. Range</td>
                             <td>
                                 <code>
                                     <span class="input">>>></span> <span class="function">print range(</span><span class="int">0, 10, 1</span></span><span clas="function">)</span>
@@ -129,7 +129,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="2">
                                 3. Integer Divison
                             </td>
                             <td>
@@ -146,7 +146,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="2">
                                 4. input() method
                             </td>
                             <td>
@@ -199,12 +199,12 @@
             </p>
             <code>
                 <span class="var">x</span> = 123 			<span class="comment"># integer</span>
-                <span class="var">x</span> = 123L			# long integer
-                <span class="var">x</span> = 3.14 			# double float
-                <span class="var">x</span> = "hello" 			# string
-                <span class="var">x</span> = [0,1,2] 			# list
-                <span class="var">x</span> = (0,1,2) 			# tuple
-                <span class="var">x</span> = open(‘hello.py’, ‘r’) 	# file
+                <span class="var">x</span> = 123L			<span class="comment"># long integer</span>
+                <span class="var">x</span> = 3.14 			<span class="comment"># double float</span>
+                <span class="var">x</span> = "hello" 		<span class="comment"># string</span>
+                <span class="var">x</span> = [0,1,2] 		<span class="comment"># list</span>
+                <span class="var">x</span> = (0,1,2) 		<span class="comment"># tuple</span>
+                <span class="var">x</span> = open(‘hello.py’, ‘r’) 	<span class="comment"># file</span>
             </code>
         </section>
         <section id="Data_Type"class="main-section">
@@ -217,19 +217,19 @@
                     In Python 3, there is effectively no limit to how long an integer value can be. Of course, it is constrained by the amount of memory your system has, as are all things, but beyond that an integer can be as long as you need it to be:
                 </p>
                 <code>
-                    >>> print(123123123123123123123123123123123123123123123123 + 1)
+                   <span class="input">>>></span><span class="function">print(</span><span class="int">123123123123123123123123123123123123123123123123</span> + <span class="int">1</span><span class="function">)</span>
                 </code>
                 <h2>Floating-Point Numbers</h2>
                 <p>
                     The float type in Python designates a floating-point number. float values are specified with a decimal point.
                 </p>
                 <code>
-                    >>> 4.2
-                    4.2
-                    >>> 4.
-                    4.0
-                    >>> .2
-                    0.2
+                    <span class="input">>>></span> <span class="float">4.2</span>
+                    <span class="output">4.2</span>
+                    <span class="input">>>></span> <span class="float">4.</span>
+                    <span class="output">4.0</span>
+                    <span class="input">>>></span> <span class="float">.2</span>
+                    <span class="output">0.2</span>
                 </code>
                 <h2>Strings</h2>
                 <p>
@@ -239,20 +239,20 @@
                     String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string:
                 </p>
                 <code>
-                    >>> print("I am a string.")
-                    I am a string.
-                    >>> print('I am too.')
-                    I am too.
+                    <span class="input">>>></span><span class="function">print(</span><span class="string">"I am a string."</span><span class="function">)</span>
+                    <span class="output">I am a string.</span>
+                    <span class="input">>>></span><span class="funtion">print(</span><span class="string">'I am too.'</span><span class="function">)</span>
+                    <span class="output">I am too.</span>
                 </code>
                 <h2>Boolean Type</h2>
                 <p>
                     Python 3 provides a Boolean data type. Objects of Boolean type may have one of two values, <code class="code-inline">True</code> or <code class="code-inline">False</code>:
                 </p>
                 <code>
-                    >>> type(True)
-                    &ltclass 'bool'&gt
-                    >>> type(False)
-                    &ltclass 'bool'&gt
+                    <span class="input">>>></span><span class="function">type(</span><span class="boolean">True</span><span class="function">)</span>
+                    <span class="output">&ltclass 'bool'&gt</span>
+                    <span class="input">>>></span><span class="function">type(</span><span class="boolean">False</span><span class="function">)</span>
+                    <span class="output">&ltclass 'bool'&gt</span>
                 </code>
             </article>
         </section>
@@ -291,9 +291,9 @@
                 </p>
                 <h2>Syntax</h2>
                 <code>
-                    if expression:
+                    <span class="expression">if</span> expression:
                         statement(s)
-                    else:
+                    <span class="expression">else</span>:
                         statement(s)
                 </code>
             </article>

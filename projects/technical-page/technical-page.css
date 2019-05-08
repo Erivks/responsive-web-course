@@ -50,3 +50,37 @@ header img {
     width: 30%;
     height: 30%;
 }
+
+/* Code */
+code {
+    white-space: pre-line;
+    padding: 0;
+    margin: 0;
+}
+.input {
+    color: #0dff0d;
+}
+.function {
+    color: #b30fff;
+}
+.string {
+    color: #ff4f0f;
+}
+.int, .float {
+    color: #0f0fff;
+}
+.comment {
+    color: #ff170f;
+}
+.output {
+    color: #309402;
+}
+.var {
+    color: #c2bf02;
+}
+.boolean {
+    color: #424fff;
+}
+.expression {
+    color: #2f1cad;
+}
